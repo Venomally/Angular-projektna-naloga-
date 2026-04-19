@@ -1,0 +1,16 @@
+<div class="container" [class]="stock.isOnSale() ? 'containerSale' : 'container'">
+  <div class="name">{{ stock.name }} {{ stock.code }}</div>
+  <div class="img"><img src="{{ stock.img }}" /></div>
+  <div class="price" [ngClass]="stockClass">${{ stock.price }}</div>
+  <button (click)="toggleFavorite($event)" [disabled]="stock.favorite">Favorite</button>
+
+  <div class="counter">
+    <div class="increment"><button (click)="stock.incrementInCard()">+</button></div>
+    <div class="counter">
+      <p>{{ stock.quantityInCart }}</p>
+    </div>
+    <div class="dicrement">
+      <button (click)="stock.decrimentInCard()" [disabled]="stock.quantityInCart === 0">-</button>
+    </div>
+  </div>
+</div>

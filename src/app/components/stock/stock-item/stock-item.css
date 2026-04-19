@@ -1,0 +1,35 @@
+.price {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.positive {
+  color: green;
+}
+.negative {
+  color: red;
+}
+
+.container {
+  background-color: red;
+}
+.containerSale {
+  background-color: green;
+}
+.counter {
+  display: flex;
+  height: 30%;
+  width: 30%;
+  background-color: orange;
+}
+.button {
+  height: 20%;
+  width: 40%;
+}
+.large-change {
+  font-size: 1.2rem;
+}
+.small-change {
+  font-size: 0.8rem;
+}
