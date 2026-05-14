@@ -1,8 +1,10 @@
-<div class="container" [class]="stock.isOnSale() ? 'containerSale' : 'container'">
+<!-- <div class="container" *ngFor="let stock of stock; index as i">
   <div class="name">{{ stock.name }} {{ stock.code }}</div>
   <div class="img"><img src="{{ stock.img }}" /></div>
-  <div class="price" [ngClass]="stockClass">${{ stock.price }}</div>
-  <button (click)="toggleFavorite($event)" [disabled]="stock.favorite">Favorite</button>
+  
+    ${{ stock.price }}
+  </div>
+  <button (click)="toggleFavorite($event)" *ngIf="!stock.favorite">Add favorite</button>
 
   <div class="counter">
     <div class="increment"><button (click)="stock.incrementInCard()">+</button></div>
@@ -13,4 +15,4 @@
       <button (click)="stock.decrimentInCard()" [disabled]="stock.quantityInCart === 0">-</button>
     </div>
   </div>
-</div>
+</div> -->
